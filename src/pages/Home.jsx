@@ -17,7 +17,7 @@ const Home = () => {
         const fetchBook = async () => {
             //we are fetching the responce from the backend server
             //now that we have the user //we will send the authorization header in the request
-            const response = await fetch('http://localhost:3000/books/', {
+            const response = await fetch('https://library-sn7f.onrender.com/books/', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
