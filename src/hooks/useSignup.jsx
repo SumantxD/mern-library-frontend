@@ -31,7 +31,7 @@ export const useSignup = () => {
         //     }
         // })
 
-        const response = await fetch('http://localhost:3000/user/signup/', {
+        const response = await fetch('https://library-sn7f.onrender.com/user/signup/', {
             method: 'POST',
             body: JSON.stringify({email, password, username}),
             headers: {'Content-Type':'application/json'}

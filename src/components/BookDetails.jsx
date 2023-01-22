@@ -16,7 +16,7 @@ const BookDetails = ({book}) => {
       return 
     }
 
-    const response = await fetch('http://localhost:3000/books/' + book._id, {
+    const response = await fetch('https://library-sn7f.onrender.com/books/' + book._id, {
       method: "DELETE",
       headers: {
         'Authorization': `Bearer ${user.token}`
